@@ -1,7 +1,9 @@
 import React from "react";
 
 const RecentPosts = () => {
-  return <div></div>;
+  return <div>
+    RecentPosts
+  </div>;
 };
 
 export default RecentPosts;

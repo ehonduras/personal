@@ -1,17 +1,27 @@
 import React from "react";
 import Navigation from "./navigation/Navigation";
-import RecentPosts from "./recent_posts/RecentPosts";
-import ProjectList from "./project_list/ProjectList";
+import MainBody from "./main_body/MainBody";
+import Footer from "./footer/Footer";
+import { Box } from "@mui/material";
 
 const Main = () => {
   return (
-    <div>
+    <Box
+      sx={{
+        position: 'relative',
+        height: '100vh',
+        width: '99vw',
+        display: 'flex',
+        justifyContent: 'center',
+        marginTop: '100px'      
+      }}
+    >
       <Navigation />
 
-      <RecentPosts />
+      <MainBody />
 
-      <ProjectList />
-    </div>
+      <Footer />
+    </Box>
   );
 };
 
