@@ -24,7 +24,7 @@ const ProjectList = () => {
             gridTemplateColumns: "1fr 1fr",
             columnGap: "2em",
             rowGap: "1em",
-            padding: "1em"
+            padding: "1em 1em 3em 1em"
           }}
         >
           {projects.map(el => (

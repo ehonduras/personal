@@ -37,7 +37,7 @@ export default function DrawerAppBar(props: Props) {
             {NAME.MY_NAME}
           </Typography>
           <Box className="navigation-items">
-            <Link href="#" color="#fff" underline="hover">
+            <Link href="/" color="#fff" underline="hover">
               {PAGES.HOME}
             </Link>
             <Link href="/projects" color="#fff" underline="hover">

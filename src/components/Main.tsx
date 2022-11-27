@@ -1,6 +1,6 @@
 import React from "react";
 import Navigation from "./navigation/Navigation";
-import MainBody from "./main_body/MainBody";
+import Home from "../pages/Home";
 import Footer from "./footer/Footer";
 import { Box } from "@mui/material";
 
@@ -12,12 +12,10 @@ const Main = () => {
         width: "99vw",
         display: "flex",
         justifyContent: "center",
-        marginTop: "100px"
+        marginTop: "10em"
       }}
     >
       <Navigation />
-
-      <MainBody />
 
       <Footer />
     </Box>
