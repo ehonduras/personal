@@ -1,37 +1,39 @@
-import { Box, Typography } from '@mui/material'
-import React from 'react'
+import { Box, Typography } from "@mui/material";
+import React from "react";
+import "../../assets/myPhoto.jpg";
 
 const WelcomeSection = () => {
   return (
     <div>
-      <Box sx={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(2, 1fr)',
-      }}>
+      <Box
+        sx={{
+          display: "grid",
+          gridTemplateColumns: "repeat(2, 1fr)"
+        }}
+      >
         <Box>
-          <Typography variant='h4' fontWeight='bold'>
-            Pozdrav, 
+          <Typography variant="h4" fontWeight="bold">
+            Welcome,
           </Typography>
           <br></br>
-          <Typography variant='h6'>
-            Dobrodošli u moj digitalni prostor.
+          <Typography variant="h6" padding="1em">
+            Hello and welcome to my digital space.
           </Typography>
           <br></br>
-          <Typography variant='h6'>
-            Ja sam Nimre Odnoh, živim u Ucijnok. Na ovom prostoru ću dijeliti neke svoje projekte, knjige koje čitam, razmišljanja i ideje. 
-            Ovaj digitalni prostor sam iskoristio kao platformu za učenje ali i bilješke o tome na što trošim vrijeme.
+          <Typography variant="h6" padding="1em">
+            I am Nimre Odnoh, I live in Ucijnok. In this space I will share some
+            of my projects, books that I read, thoughts and ideas. I intend to
+            use this space as a platform for my own learning but also as a
+            notetaking space for my efforts.
           </Typography>
         </Box>
 
         <Box>
-          <Typography>
-            Ovo je mjesto za sliku
-          </Typography>
+          <img src="../../assets/myPhoto.jpg" alt="myPhoto" />
         </Box>
-
       </Box>
     </div>
-  )
-}
+  );
+};
 
-export default WelcomeSection
+export default WelcomeSection;

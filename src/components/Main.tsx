@@ -8,12 +8,11 @@ const Main = () => {
   return (
     <Box
       sx={{
-        position: 'relative',
-        height: '100vh',
-        width: '99vw',
-        display: 'flex',
-        justifyContent: 'center',
-        marginTop: '100px'      
+        position: "relative",
+        width: "99vw",
+        display: "flex",
+        justifyContent: "center",
+        marginTop: "100px"
       }}
     >
       <Navigation />

@@ -1,9 +1,39 @@
-import React from "react";
+import { Box, Typography } from "@mui/material";
+import Project from "./Project";
+
+const projects = [
+  "project",
+  "project",
+  "project",
+  "project",
+  "project",
+  "project",
+  "project",
+  "project"
+];
 
 const ProjectList = () => {
-  return <div>
-    ProjectList
-  </div>;
+  return (
+    <>
+      <Box>
+        <Typography variant="h4">Project List</Typography>
+
+        <Box
+          sx={{
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr",
+            columnGap: "2em",
+            rowGap: "1em",
+            padding: "1em"
+          }}
+        >
+          {projects.map(el => (
+            <Project />
+          ))}
+        </Box>
+      </Box>
+    </>
+  );
 };
 
 export default ProjectList;
