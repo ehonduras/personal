@@ -8,7 +8,7 @@ const Projects = () => {
     <Box
       sx={{
         position: "relative",
-        width: "99vw",
+        width: "89vw",
         display: "flex",
         justifyContent: "center",
         marginTop: "10em"

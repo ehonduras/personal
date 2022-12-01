@@ -6,6 +6,11 @@ body{
     margin: 0;
 }
 
+#root{
+    display: flex;
+    justify-content: center;
+}
+
 .navigation-items{
     width: 50%;
     display: flex;

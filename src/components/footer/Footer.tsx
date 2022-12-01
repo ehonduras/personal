@@ -35,12 +35,11 @@ export default function SimpleBottomNavigation() {
 
   return (
     <Box sx={{
-        width: "80%",
+        width: "95%",
         position: "absolute",
         bottom: "0.1em",
         display: "flex",
         justifyContent: "center",
-        alignContent: "center"
       }}>
       <BottomNavigation
         showLabels

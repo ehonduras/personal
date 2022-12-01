@@ -8,19 +8,20 @@ const WelcomeSection = () => {
       <Box
         sx={{
           display: "grid",
-          gridTemplateColumns: "repeat(2, 1fr)"
+          gridTemplateColumns: "repeat(2, 1fr)",
+          marginBottom: "5%"
         }}
       >
         <Box>
           <Typography variant="h4" fontWeight="bold">
-            Welcome,
+            Welcome
           </Typography>
           <br></br>
-          <Typography variant="h6" padding="1em">
+          <Typography variant="h6" padding="2%">
             Hello and welcome to my digital space.
           </Typography>
           <br></br>
-          <Typography variant="h6" padding="1em">
+          <Typography variant="h6" padding="2%">
             I am Nimre Odnoh, I live in Ucijnok. In this space I will share some
             of my projects, books that I read, thoughts and ideas. I intend to
             use this space as a platform for my own learning but also as a

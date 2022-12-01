@@ -16,15 +16,15 @@ const ProjectList = () => {
   return (
     <>
       <Box>
-        <Typography variant="h4">Project List</Typography>
+        <Typography variant="h5">Project List</Typography>
 
         <Box
           sx={{
             display: "grid",
             gridTemplateColumns: "1fr 1fr",
-            columnGap: "2em",
-            rowGap: "1em",
-            padding: "1em 1em 3em 1em"
+            columnGap: "3em",
+            rowGap: "3em",
+            padding: "3em 1em 3em 1em"
           }}
         >
           {projects.map(el => (

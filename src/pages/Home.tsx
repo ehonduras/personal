@@ -1,19 +1,19 @@
 import { Box } from "@mui/material";
-import React from "react";
+import Footer from "../components/footer/Footer";
 import ProjectList from "../components/main_body/ProjectList";
 import RecentPosts from "../components/main_body/RecentPosts";
 import WelcomeSection from "../components/main_body/WelcomeSection";
 
-const MainBody = () => {
+const Home = () => {
   return (
     <Box
       sx={{
-        height: "90%",
+        position: "relative",
         width: "80%",
-        display: "flex",
+        padding: "7% 3% 3%",
+        displax: "flex",
         flexDirection: "column",
-        justifyContent: "space-around",
-        mb: "3em"
+        justifyContent: "center"
       }}
     >
       <WelcomeSection />
@@ -21,8 +21,10 @@ const MainBody = () => {
       <RecentPosts />
 
       <ProjectList />
+
+      <Footer />
     </Box>
   );
 };
 
-export default MainBody;
+export default Home;

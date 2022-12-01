@@ -6,15 +6,15 @@ const RecentPosts = () => {
   return (
     <>
       <Box>
-        <Typography variant="h4">Recent Posts</Typography>
+        <Typography variant="h5">Recent Posts</Typography>
 
         <Box
           sx={{
             display: "grid",
             gridTemplateColumns: "1fr 1fr",
-            columnGap: "2em",
+            columnGap: "3em",
             rowGap: "2em",
-            padding: "1em"
+            padding: "3% 1%" 
           }}
         >
           {posts.map(el => (
