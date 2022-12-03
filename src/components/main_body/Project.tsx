@@ -6,6 +6,14 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
+interface ProjectProps{
+  project: {
+    projectId: string,
+    projectName: string,
+    tags: string
+  };
+}
+
 const bull = (
   <Box
     component="span"
@@ -15,12 +23,12 @@ const bull = (
   </Box>
 );
 
-export default function BasicCard() {
+const Project: React.FC<ProjectProps> = ({project}) => {
   return (
     <Card sx={{ minWidth: 275 }}>
       <CardContent>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-          Project Name
+          el.
         </Typography>
         <Typography variant="body2">
           tags
@@ -32,3 +40,5 @@ export default function BasicCard() {
     </Card>
   );
 }
+
+export default Project;

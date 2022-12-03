@@ -1,16 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import Project from "./Project";
-
-const projects = [
-  "project",
-  "project",
-  "project",
-  "project",
-  "project",
-  "project",
-  "project",
-  "project"
-];
+import "../../styles/main.scss";
+import {projects} from "../../assets/projects";
 
 const ProjectList = () => {
   return (
@@ -24,11 +15,11 @@ const ProjectList = () => {
             gridTemplateColumns: "1fr 1fr",
             columnGap: "3em",
             rowGap: "3em",
-            padding: "3em 1em 3em 1em"
+            padding: "3% 1%"
           }}
         >
           {projects.map(el => (
-            <Project />
+            <Project key={el.projectId} project={el}/>
           ))}
         </Box>
       </Box>

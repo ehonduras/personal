@@ -29,9 +29,9 @@ const WelcomeSection = () => {
           </Typography>
         </Box>
 
-        <Box>
+        <div>
           <img src="../../assets/myPhoto.jpg" alt="myPhoto" />
-        </Box>
+        </div>
       </Box>
     </div>
   );
