@@ -1,10 +1,44 @@
+import uuid from "react-uuid";
+
 export const posts = [
-  "lorem ipsum",
-  "lorem ipsum",
-  "lorem ipsum",
-  "lorem ipsum",
-  "lorem ipsum",
-  "lorem ipsum",
-  "lorem ipsum",
-  "lorem ipsum"
+  {
+    postId: uuid(),
+    postContent: "Lorem ipsum something something.",
+    theme: "theme"
+  },
+  {
+    postId: uuid(),
+    postContent: "Lorem ipsum something something.",
+    theme: "theme"
+  },
+  {
+    postId: uuid(),
+    postContent: "Lorem ipsum something something.",
+    theme: "theme"
+  },
+  {
+    postId: uuid(),
+    postContent: "Lorem ipsum something something.",
+    theme: "theme"
+  },
+  {
+    postId: uuid(),
+    postContent: "Lorem ipsum something something.",
+    theme: "theme"
+  },
+  {
+    postId: uuid(),
+    postContent: "Lorem ipsum something something.",
+    theme: "theme"
+  },
+  {
+    postId: uuid(),
+    postContent: "Lorem ipsum something something.",
+    theme: "theme"
+  },
+  {
+    postId: uuid(),
+    postContent: "Lorem ipsum something something.",
+    theme: "theme"
+  }
 ];

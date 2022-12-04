@@ -3,12 +3,12 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import { Route, Routes } from "react-router-dom";
-import About from "./pages/About";
-import Home from "./pages/Home";
-import Learning from "./pages/Learning";
-import Library from "./pages/Library";
-import Projects from "./pages/Projects";
-import Error from "./pages/Projects";
+import AboutPage from "./pages/AboutPage";
+import HomePage from "./pages/HomePage";
+import LearningPage from "./pages/LearningPage";
+import LibraryPage from "./pages/LibraryPage";
+import ProjectsPage from "./pages/ProjectsPage";
+import ErrorPage from "./pages/ProjectsPage";
 
 const root = ReactDOM.createRoot(document.getElementById(
   "root"
@@ -18,12 +18,12 @@ root.render(
     <BrowserRouter>
       <App />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/learning" element={<Learning />} />
-        <Route path="/library" element={<Library />} />
-        <Route path="/error" element={<Error />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/learning" element={<LearningPage />} />
+        <Route path="/library" element={<LibraryPage />} />
+        <Route path="/error" element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

@@ -1,7 +1,7 @@
 import React from "react";
 
-const Library = () => {
+const LibraryPage = () => {
   return <div>Library</div>;
 };
 
-export default Library;
+export default LibraryPage;

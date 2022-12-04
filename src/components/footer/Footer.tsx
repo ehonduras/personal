@@ -21,26 +21,28 @@
 
 // export default Footer;
 
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import BottomNavigation from '@mui/material/BottomNavigation';
-import BottomNavigationAction from '@mui/material/BottomNavigationAction';
-import Twitter from '@mui/icons-material/Twitter';
-import Facebook from '@mui/icons-material/Facebook';
-import Email from '@mui/icons-material/Email';
-import Copyright from '@mui/icons-material/Copyright';
+import * as React from "react";
+import Box from "@mui/material/Box";
+import BottomNavigation from "@mui/material/BottomNavigation";
+import BottomNavigationAction from "@mui/material/BottomNavigationAction";
+import Twitter from "@mui/icons-material/Twitter";
+import Facebook from "@mui/icons-material/Facebook";
+import Email from "@mui/icons-material/Email";
+import Copyright from "@mui/icons-material/Copyright";
 
 export default function SimpleBottomNavigation() {
   const [value, setValue] = React.useState(0);
 
   return (
-    <Box sx={{
+    <Box
+      sx={{
         width: "95%",
         position: "absolute",
         bottom: "0.1em",
         display: "flex",
-        justifyContent: "center",
-      }}>
+        justifyContent: "center"
+      }}
+    >
       <BottomNavigation
         showLabels
         value={value}

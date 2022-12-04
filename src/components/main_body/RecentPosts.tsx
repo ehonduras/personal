@@ -14,12 +14,12 @@ const RecentPosts = () => {
             gridTemplateColumns: "1fr 1fr",
             columnGap: "3em",
             rowGap: "2em",
-            padding: "3% 1%" 
+            padding: "3% 1%"
           }}
         >
-          {posts.map(el => (
-            <Box sx={{ alignContent: "center" }}>
-              <Typography>{el}</Typography>
+          {posts.map(post => (
+            <Box key={post.postId} sx={{ alignContent: "center" }}>
+              <Typography>{post.postContent}</Typography>
             </Box>
           ))}
         </Box>

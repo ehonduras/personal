@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import Project from "./Project";
 import "../../styles/main.scss";
-import {projects} from "../../assets/projects";
+import { projects } from "../../assets/projects";
 
 const ProjectList = () => {
   return (
@@ -19,7 +19,7 @@ const ProjectList = () => {
           }}
         >
           {projects.map(el => (
-            <Project key={el.projectId} project={el}/>
+            <Project key={el.projectId} project={el} />
           ))}
         </Box>
       </Box>

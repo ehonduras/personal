@@ -1,44 +1,42 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+import * as React from "react";
+import Box from "@mui/material/Box";
+import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
 
-interface ProjectProps{
+interface ProjectProps {
   project: {
-    projectId: string,
-    projectName: string,
-    tags: string
+    projectId: string;
+    projectName: string;
+    tags: string;
   };
 }
 
 const bull = (
   <Box
     component="span"
-    sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
+    sx={{ display: "inline-block", mx: "2px", transform: "scale(0.8)" }}
   >
     •
   </Box>
 );
 
-const Project: React.FC<ProjectProps> = ({project}) => {
+const Project: React.FC<ProjectProps> = ({ project }) => {
   return (
     <Card sx={{ minWidth: 275 }}>
       <CardContent>
-        <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-          el.
+        <Typography sx={{ fontSize: 20 }} color="text.secondary" gutterBottom>
+          {project.projectName}
         </Typography>
-        <Typography variant="body2">
-          tags
-        </Typography>
+        <Typography variant="body2">{project.tags}</Typography>
       </CardContent>
       <CardActions>
         <Button size="small">Learn More</Button>
       </CardActions>
     </Card>
   );
-}
+};
 
 export default Project;

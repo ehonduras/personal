@@ -4,7 +4,7 @@ import ProjectList from "../components/main_body/ProjectList";
 import RecentPosts from "../components/main_body/RecentPosts";
 import WelcomeSection from "../components/main_body/WelcomeSection";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <Box
       sx={{
@@ -27,4 +27,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;
