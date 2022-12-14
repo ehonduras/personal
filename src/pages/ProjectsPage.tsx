@@ -24,9 +24,12 @@ const ProjectsPage = () => {
       }}
     >
       {projects.map(project => (
-        <Card key={project.projectId} sx={{
-          position: "relative"
-        }}>
+        <Card
+          key={project.projectId}
+          sx={{
+            position: "relative"
+          }}
+        >
           <CardContent>
             <Typography
               sx={{ fontSize: 20, padding: "3%" }}
@@ -45,10 +48,15 @@ const ProjectsPage = () => {
             <Typography variant="body2">{project.tags}</Typography>
           </CardContent>
           <CardActions>
-            <Button size="small" sx={{
-              position: "absolute",
-              bottom: "0.1%"
-            }}>Learn More</Button>
+            <Button
+              size="small"
+              sx={{
+                position: "absolute",
+                bottom: "0.1%"
+              }}
+            >
+              Learn More
+            </Button>
           </CardActions>
         </Card>
       ))}

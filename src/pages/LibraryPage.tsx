@@ -23,41 +23,40 @@ const LibraryPage = () => {
       }}
     >
       {books.map(book => (
-        <Card key={book.bookId} sx={{
-          position: "relative",
-          minHeight: "50px",
-          maxHeight: "175px"
-        }}>
-          <CardContent sx={{
-            width: "85%",
-            height: "100%",
-            display: "flex",
-            justifyContent: "space-between",
-            alignContent: "center",
-            border: "5px solid green"
-          }}>
-            <Typography
-              color="text.secondary"
-              gutterBottom
-            >
+        <Card
+          key={book.bookId}
+          sx={{
+            position: "relative",
+            minHeight: "50px",
+            maxHeight: "175px"
+          }}
+        >
+          <CardContent
+            sx={{
+              width: "70%",
+              height: "100%",
+              display: "flex",
+              justifyContent: "space-around",
+              alignContent: "center"
+            }}
+          >
+            <Typography color="text.secondary" gutterBottom>
               {book.bookName}
             </Typography>
 
-            <Typography sx={{}}>
-              {book.bookAuthor}
-            </Typography>
-
-            <Typography variant="body2" sx={{
-              border: "5px solid red",
-              display: "flex"
-            }}>{book.tags}</Typography>
+            <Typography sx={{}}>{book.bookAuthor}</Typography>
           </CardContent>
           <CardActions>
-            <Button size="small" sx={{
-              position: "absolute",
-              bottom: "0.1%",
-              right: "0.1%"
-            }}>More...</Button>
+            <Button
+              size="small"
+              sx={{
+                position: "absolute",
+                bottom: "0.1%",
+                right: "0.1%"
+              }}
+            >
+              More...
+            </Button>
           </CardActions>
         </Card>
       ))}
@@ -66,4 +65,3 @@ const LibraryPage = () => {
 };
 
 export default LibraryPage;
-
